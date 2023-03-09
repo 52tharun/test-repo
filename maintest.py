@@ -17,8 +17,18 @@ def quotient_remainder(a,b):
     return myTuple
 
 
-printvalue = quotient_remainder (-10,-3)
+assert quotient_remainder(7, 3) == (2, 1)
+assert quotient_remainder(-7, 3) == (-3, 2)
+assert quotient_remainder(7, -3) == (-3, -2)
+assert quotient_remainder(-7, -3) == (2, -1)
 
-print (printvalue)
-print ("commit1 test")
+# Check that the function raises a ValueError for b = 0
+try:
+    quotient_remainder(7, 0)
+except ValueError:
+    print("ValueError was raised as expected")
+else:
+    print("Error: function should have raised a ValueError")
+
+print("All tests passed!")
 
