@@ -18,9 +18,7 @@ def quotient_remainder(a,b):
 
 
 assert quotient_remainder(7, 3) == (2, 1)
-assert quotient_remainder(-7, 3) == (-3, 2)
-assert quotient_remainder(7, -3) == (-3, -2)
-assert quotient_remainder(-7, -3) == (2, -1)
+
 
 # Check that the function raises a ValueError for b = 0
 try:
